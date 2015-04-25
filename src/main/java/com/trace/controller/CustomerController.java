@@ -12,23 +12,23 @@ import com.trace.entity.Customer;
 import com.trace.service.ICustomerService;
 
 @Controller
-@RequestMapping(value="/customers")
+@RequestMapping(value = "/customers")
 public class CustomerController {
-	
+
 	@Autowired
 	private ICustomerService customerService;
-	
-	@RequestMapping(value="/list")
-	public ModelAndView getCustomers(){
-		ModelAndView model=new ModelAndView("listofcustomers");
-		List<Customer> customers=customerService.getCustomers();
+
+	@RequestMapping(value = "/list")
+	public ModelAndView getCustomers() {
+		ModelAndView model = new ModelAndView("listofcustomers");
+		List<Customer> customers = customerService.getCustomers();
 		model.addObject("customers", customers);
 		return model;
 	}
-	
-	@RequestMapping(value="/json")
+
+	@RequestMapping(value = "/json")
 	@ResponseBody
-	public List<Customer> getCustomersJson(){
+	public List<Customer> getCustomersJson() {
 		return customerService.getCustomers();
 	}
 }

@@ -13,13 +13,13 @@
             base-package="org.springframework.samples.web"/>  -->
 
 	 <!-- 注解扫描包，用到了spring注解的都要扫描 -->  
-    <context:component-scan base-package="test.spring" />  
+    <context:component-scan base-package="com.trace" />  
     
      <!-- 开启注解 -->  
     <mvc:annotation-driven />
     
     <!-- 静态资源(js/image)的访问 ，没有所以暂时忽略-->  
-    <!-- <mvc:resources location="/js/" mapping="/js/**"/> -->
+    <mvc:resources location="/js/" mapping="/js/**"/>
 	
     <!-- 定义视图解析器 -->    
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
