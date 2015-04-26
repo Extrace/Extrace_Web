@@ -1,4 +1,4 @@
-package com.trace.dao;
+package com.trace.dao.inter;
 
 import java.util.List;
 

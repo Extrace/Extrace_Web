@@ -1,4 +1,4 @@
-package com.trace.dao;
+package com.trace.dao.impl;
 
 import java.util.List;
 
@@ -8,6 +8,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.trace.dao.inter.ICustomerDao;
 import com.trace.entity.Customer;
 /**
  * 客户数据访问对象

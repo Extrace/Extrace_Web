@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.trace.entity.Customer;
-import com.trace.service.ICustomerService;
+import com.trace.service.inter.ICustomerService;
 
 @Controller
-@RequestMapping(value = "/customers")
+@RequestMapping(value = "/customer")
 public class CustomerController {
 
 	@Autowired

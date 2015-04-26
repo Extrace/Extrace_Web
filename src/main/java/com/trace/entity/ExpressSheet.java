@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="expresssheet")
-public class Expresssheet {
+public class ExpressSheet {
 	private String id;
 	private int expresstype;
 	private int sender;

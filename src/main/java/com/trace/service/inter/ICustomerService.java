@@ -1,4 +1,4 @@
-package com.trace.service;
+package com.trace.service.inter;
 
 import java.util.List;
 

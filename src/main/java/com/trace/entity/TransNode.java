@@ -7,7 +7,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="transnode")
-public class Transnode {
+public class TransNode {
 	private String id;
 	private String nodename;
 	private int nodetype;

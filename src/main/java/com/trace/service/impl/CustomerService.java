@@ -1,4 +1,4 @@
-package com.trace.service;
+package com.trace.service.impl;
 
 import java.util.List;
 
@@ -6,8 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.trace.dao.ICustomerDao;
+import com.trace.dao.inter.ICustomerDao;
 import com.trace.entity.Customer;
+import com.trace.service.inter.ICustomerService;
 
 @Service
 @Transactional

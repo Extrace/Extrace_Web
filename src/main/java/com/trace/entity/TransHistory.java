@@ -12,7 +12,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="transhistory")
-public class Transhistory {
+public class TransHistory {
 	private int sn;
 	private String packageid;
 	private Date acttime;

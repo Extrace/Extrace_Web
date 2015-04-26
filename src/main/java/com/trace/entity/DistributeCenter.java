@@ -10,7 +10,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="distributecenter")
-public class Distributecenter {
+public class DistributeCenter {
 
 	private int sn;
 	private String expresssheetid;
