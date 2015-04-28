@@ -33,7 +33,7 @@
 
 		<!-- Test -->
 		<junit.version>4.11</junit.version>
-		
+
 		<!-- Json -->
 		<jackson.version>1.9.13</jackson.version>
 
@@ -120,17 +120,26 @@
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.4</version>
 		</dependency>
-		
-	
+
+
 		<!-- Jackson JSON Mapper -->
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-mapper-asl</artifactId>
 			<version>${jackson.version}</version>
-			<scope>compile</scope>  
+			<scope>compile</scope>
 		</dependency>
-		
-		
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.4.1.1</version>
+		</dependency>
 
 
 		<!-- Test Artifacts -->

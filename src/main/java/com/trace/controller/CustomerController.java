@@ -1,10 +1,12 @@
 package com.trace.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -26,9 +28,20 @@ public class CustomerController {
 		return model;
 	}
 
-	@RequestMapping(value = "/json")
+	@RequestMapping(value = "/json", method = RequestMethod.GET, produces = "application/json")
 	@ResponseBody
 	public List<Customer> getCustomersJson() {
-		return customerService.getCustomers();
+		List<Customer> lcustomer = customerService.getCustomers();
+		return creatListjson(lcustomer);
 	}
+
+	private List<Customer> creatListjson(List<Customer> lcustomer) {
+		// TODO Auto-generated method stub
+		List<Customer> customers = new ArrayList<Customer>();
+		for (Customer c : lcustomer) {
+			customers.add(c);
+		}
+		return customers;
+	}
+
 }
